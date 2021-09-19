@@ -24,7 +24,12 @@ const routes = [
     path: '/post/:id',
     name: 'post',
     component: () => import(/* webpackChunkName: "about" */ '../views/Post.vue')
-  }
+  },
+  {
+    path: '/edit-post/:id',
+    name: 'edit-post',
+    component: () => import(/* webpackChunkName: "about" */ '../views/EditPost.vue')
+  },
 ]
 
 const router = new VueRouter({
